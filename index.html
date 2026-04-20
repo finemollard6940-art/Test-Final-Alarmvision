@@ -5,16 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alarm Vision • Sécurité IA résidentielle &amp; entreprise</title>
   <meta name="description" content="Alarm Vision – Détection intelligente, zéro fausse alerte. Vidéosurveillance IA pour particuliers et professionnels. Agence à Lyon, intervention toute la France.">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- React -->
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- ✅ Babel — MANQUAIT, c'est la cause de la page blanche -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init('MFZW0V06es17giiT8');</script>
+
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="antialiased">
-<div id="root"></div>
-<script type="text/babel" src="assets/app.js"></script>
+  <div id="root"></div>
+  <script type="text/babel" src="assets/app.js"></script>
 </body>
 </html>
